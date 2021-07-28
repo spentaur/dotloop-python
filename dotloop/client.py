@@ -1,5 +1,3 @@
-from functools import cached_property
-
 import requests
 
 from .account import Account
@@ -45,7 +43,7 @@ class Client:
     def contact(self):
         return Contact(parent=self)
 
-    @cached_property
+    @property
     def DEFAULT_PROFILE(self):
         profiles = self.profile.get()
         try:
