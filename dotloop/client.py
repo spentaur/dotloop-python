@@ -1,3 +1,5 @@
+from functools import lru_cache
+
 import requests
 
 from .account import Account
@@ -44,6 +46,7 @@ class Client:
         return Contact(parent=self)
 
     @property
+    @lru_cache()
     def DEFAULT_PROFILE(self):
         profiles = self.profile.get()
         try:
