@@ -107,6 +107,7 @@ class EndpointDirectoryClass:
         [('Detail', 'get', None), 'profile/{0.profile_id}/loop/{0.loop_id}/detail'],
         [('Detail', 'patch', None), 'profile/{0.profile_id}/loop/{0.loop_id}/detail'],
         [('Folder', 'get', None), 'profile/{0.profile_id}/loop/{0.loop_id}/folder'],
+        [('Folder', 'post', None), 'profile/{0.profile_id}/loop/{0.loop_id}/folder'],
         [('Folder', 'get', NotNone), 'profile/{0.profile_id}/loop/{0.loop_id}/folder/{0.folder_id}'],
         [('Folder', 'patch', NotNone), 'profile/{0.profile_id}/loop/{0.loop_id}/folder/{0.folder_id}'],
         [('Document', 'get', None), 'profile/{0.profile_id}/loop/{0.loop_id}/folder/{0.folder_id}/document'],
